@@ -2,260 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Calculator</title>
 </head>
 <body>
- <div id="main"> 
-    <div class="cursor"></div>
-    <div id="header">
-        <div class="container">
-            <nav class="nav" id="home">
-                <img src="./images/img.png" alt="" class="img">
-                <ul>
-                    <li class="list"><a href="#home">Home</a></li>
-                    <li class="list"><a href="#about">About</a></li>
-                    <li class="list"><a href="#skills">Skills</a></li>
-                    <li class="list"><a href="#projects">Projects</a></li>
-                    <li class="list"><a href="#contact">Contact</a></li>
-                </ul> 
-            </nav>
-            <div class="header-text" >
-                <h1 >Hi all I'm <br> <span> Shailendra </span> 👋</h1>
-                <p>Front-End Developer</p>
-            </div>
-            <div class="icons">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="buttons">
-                <button class="button">Contact ME! <i class="fa-solid fa-arrow-right"></i></button>
-                <button class="button" id="resume">My Resume <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox">
+        <div>
+            <button class="operator">AC</button>
+            <button class="operator">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+        </div>
+        <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="equalBtn">=</button>
         </div>
     </div>
-    
-
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/avatar-1.svg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <div class="upper-sec">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="para">As a passionate full stack developer, I bring ideas to life by mastering both frontend intricacies and backend architecture. With dedication and innovation, I craft seamless digital experiences that exceed expectations, pushing boundaries and sparking meaningful connections between technology and users.</p>
-                    <button  class="button">Download Resume <i class="fa-solid fa-download"></i></button>
-                </div>
-                </div>
-            </div>
-        </div>
-  
-
-
-
-                <!-- Skills Section -->
-    <div id="skills">
-        <div class="container">
-            <h1 class="sub-title-2">Skills</h1>
-            <div class="skills-sec">
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per"> </div>
-                    </div>
-                    <div class="per">65%</div>
-                    <div class="skill-img">
-                        <img src="./images/html-5.svg" alt="" class="skill-images">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per" id="per-css"> </div>
-                    </div>
-                    <div class="per" >70%</div>
-                    <div class="skill-img">
-                        <img src="./images/css3.svg" alt="" class="skill-images">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per" id="per-js"> </div>
-                    </div>
-                    <div class="per">60%</div>
-                    <div class="skill-img">
-                        <img src="./images/javascript.svg" alt="" class="skill-images">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per" id="per-bs"> </div>
-                    </div>
-                    <div class="per">70%</div>
-                    <div class="skill-img">
-                        <img src="./images/icons8-bootstrap.svg" alt="" class="skill-images">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per" id="per-tw"> </div>
-                    </div>
-                    <div class="per">60%</div>
-                    <div class="skill-img">
-                        <img src="./images/Tailwind_CSS_Logo.svg" alt="" class="skill-images" id="tailwind">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <div class="skill-prog">
-                        
-                        <div class="skill-per" id="per-react"> </div>
-                    </div>
-                    <div class="per">60%</div>
-                    <div class="skill-img">
-                        <img src="./images/react.svg" alt="" class="skill-images" id="react">
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-
-    
-
-    <!-- ==========       projects section    ========== -->
-    <div id="projects">
-        <div class="container">
-            <center class="sub-title-2 proj">Projects</center>
-            <div class="projects-sec">
-                <div class="cards-grid">
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/startbucks.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name"> Starbucks  Clone App</h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">A mobile app clone of the popular coffee </p>
-                    </div>
-                </div>
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/amazon.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name"> Amazon  Clone App</h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">Amazon clone where you can but cloths for you and for your family </p>
-                    </div>
-                </div>
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/calculator.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name">Calculator</h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">
-                            "Calculate Success with Our Clone - Crunching Numbers, Unlocking Potential!"</p>
-                    </div>
-                </div>
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/carhub.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name"> VehicleHub </h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">
-                            "Navigate Your Journey with Vehicle Hub - Drive Your Dreams!" </p>
-                    </div>
-                </div>
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/golf club.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name"> Golf CLub</h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">"Swing into Excellence with Our Golf Club - Where Every Stroke Counts!" </p>
-                    </div>
-                </div>
-                    <div class="cards">
-                    <div class="project-img">
-                        <a href="#"><img src="./images/fanta.png" alt="Weather App" class="proj-img"></a>
-                    </div>
-                    <div class="project-name">
-                        <h3 class="proj-name"> Fanta </h3>
-                    </div>
-                    <div class="project-des">
-                        <p class="proj-para">
-                            "Chill Thrills Await: Dive into Fanta's Cool World!"</p>
-                    </div>
-                </div>
-                    
-                </div>
-
-            </div>
-        </div>
-    </div>
-   
-    <!-- ==========       contact section    ========== -->
-    <div id="contact">
-        <div class="container">
-            <center class="sub-title-2 proj">Contact</center>
-            <div class="contact-sec">
-                <div class="col-1">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227822.6037205061!2d80.77769875588906!3d26.848596481511404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1703323582149!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-2">
-                    <form action="" class="form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btns button">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="back-to-top">
-        <a href="#home"><i class="fa-solid fa-arrow-up buttons"></i></a>
-    </div>
-</div>  
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="script.js">
-      
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
